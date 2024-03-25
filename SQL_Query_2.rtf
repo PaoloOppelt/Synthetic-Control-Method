@@ -1,0 +1,87 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2638
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\froman\fcharset0 TimesNewRomanPSMT;\f1\froman\fcharset0 Times-Roman;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;}
+{\*\expandedcolortbl;;\cssrgb\c0\c0\c0;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs32 \cf0 \expnd0\expndtw0\kerning0
+select
+\f1\fs24 \
+
+\f0\fs32 person_ctry_code
+\f1\fs24 \
+
+\f0\fs32 # depends on grouping
+\f1\fs24 \
+
+\f0\fs32 	t1.appln_id, t1.person_id, b.person_ctry_code, t1.invt_seq_nr, t1.inpadoc_family_id,
+\f1\fs24 \
+
+\f0\fs32 t1.cpc_class_symbol, t1.earliest_filing_date, t1.earliest_filing_year
+\f1\fs24 \
+
+\f0\fs32 from
+\f1\fs24 \
+\
+
+\f0\fs32 # temp table that links appln_id with person_id
+\f1\fs24 \
+
+\f0\fs32 (select\'a0
+\f1\fs24 \
+
+\f0\fs32 	t.appln_id, a.person_id, a.invt_seq_nr, t.inpadoc_family_id, t.cpc_class_symbol, t.earliest_filing_date, t.earliest_filing_year
+\f1\fs24 \
+
+\f0\fs32 from\'a0
+\f1\fs24 \
+
+\f0\fs32 	paolo_oppelt.my_sample t
+\f1\fs24 \
+
+\f0\fs32 inner join tls207_pers_appln a
+\f1\fs24 \
+
+\f0\fs32 on t.appln_id = a.appln_id
+\f1\fs24 \
+
+\f0\fs32 WHERE
+\f1\fs24 \
+
+\f0\fs32 # so that only inventors and not applicants are counted for the country\'a0
+\f1\fs24 \
+
+\f0\fs32 	a.invt_seq_nr > 0
+\f1\fs24 \
+
+\f0\fs32 	) t1
+\f1\fs24 \
+\
+
+\f0\fs32 inner join tls206_person b
+\f1\fs24 \
+
+\f0\fs32 on t1.person_id = b.person_id
+\f1\fs24 \
+
+\f0\fs32 order by inpadoc_family_id asc
+\f1\fs24 \
+
+\f0\fs32 	
+\f1\fs24 \
+
+\f0\fs32 # do the grouping by inv_seq_nr and inv_per_country_per_family on R
+\f1\fs24 \
+
+\f0\fs32 # easier to just create a separate column for those groupings
+\f1\fs24 \
+\
+
+\f0\fs32 # invt_seq_nr tells me how many inventors where involved in one family
+\f1\fs24 \
+
+\f0\fs32 # by default invt_seq_nr starts counting from zero for each appln_id not family
+\f1\fs24 \
+}

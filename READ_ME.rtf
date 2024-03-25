@@ -1,0 +1,20 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2638
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 To recreate the synthetic control method do the following:\
+\
+1. Log into PATSTAT 2022 and run SQL Query 1 then SQL Query 2 in a DB manager like SQL ace. (SQL query 1 creates a temporary table, which is needed as otherwise PATSTAT crashes because the query loads over 45 min.). Each query will need over 6 min to run. \
+\
+2. Open the R project and change all the working directories and install all the packages.\
+\
+3. Run transport_analysis_outcome_per_country.R to create the weighted Y02T patent count per inventor\'92s country of residence.  (I then manually transposed the resulting data frame and added it to the main Excel file \'93Data_paolo\'94. In \'93Data_paolo\'94 you will find all the cleaned data tables for the predictors and the carbon price. \
+\
+4. Run synthetic_control_method.R\
+\
+5. Run transport_outcome_regression.R\
+\
+Done.}

@@ -1,0 +1,11 @@
+
+<table style="text-align:center"><tr><td colspan="4" style="border-bottom: 1px solid black"></td></tr><tr><td></td><td>Treated</td><td>Synthetic</td><td>Sample Mean</td></tr>
+<tr><td colspan="4" style="border-bottom: 1px solid black"></td></tr><tr><td>transport_wipo</td><td>57.705</td><td>26.702</td><td>4.153</td></tr>
+<tr><td>triadic_patent_families</td><td>422.515</td><td>188.038</td><td>31.896</td></tr>
+<tr><td>y02t</td><td>6.250</td><td>5.205</td><td>0.792</td></tr>
+<tr><td>climate_change_mitigation</td><td>33.257</td><td>31.487</td><td>4.690</td></tr>
+<tr><td>climate_transport_epo</td><td>6</td><td>5.283</td><td>0.830</td></tr>
+<tr><td>enrollment_tertiary</td><td>30.368</td><td>30.717</td><td>17.494</td></tr>
+<tr><td>gdp</td><td>239,209.000</td><td>202,904.200</td><td>134,954.100</td></tr>
+<tr><td>b60</td><td>27.519</td><td>14.498</td><td>2.365</td></tr>
+<tr><td colspan="4" style="border-bottom: 1px solid black"></td></tr></table>

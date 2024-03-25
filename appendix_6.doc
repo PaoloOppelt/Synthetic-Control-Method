@@ -1,0 +1,17 @@
+
+<table style="text-align:center"><tr><td colspan="4" style="border-bottom: 1px solid black"></td></tr><tr><td></td><td>w.weights</td><td>unit.names</td><td>unit.numbers</td></tr>
+<tr><td colspan="4" style="border-bottom: 1px solid black"></td></tr><tr><td>1</td><td>0.638</td><td>Austria</td><td>1</td></tr>
+<tr><td>2</td><td>0.362</td><td>Belgium</td><td>2</td></tr>
+<tr><td>3</td><td>0</td><td>Bulgaria</td><td>3</td></tr>
+<tr><td>4</td><td>0</td><td>Croatia</td><td>4</td></tr>
+<tr><td>5</td><td>0</td><td>Cyprus</td><td>5</td></tr>
+<tr><td>6</td><td>0</td><td>Czech Republic</td><td>6</td></tr>
+<tr><td>7</td><td>0</td><td>Greece</td><td>7</td></tr>
+<tr><td>8</td><td>0</td><td>Hungary</td><td>8</td></tr>
+<tr><td>9</td><td>0</td><td>Lithuania</td><td>9</td></tr>
+<tr><td>10</td><td>0</td><td>Luxembourg</td><td>10</td></tr>
+<tr><td>11</td><td>0</td><td>Malta</td><td>11</td></tr>
+<tr><td>12</td><td>0</td><td>Poland</td><td>12</td></tr>
+<tr><td>13</td><td>0</td><td>Romania</td><td>13</td></tr>
+<tr><td>14</td><td>0</td><td>Slovakia</td><td>14</td></tr>
+<tr><td colspan="4" style="border-bottom: 1px solid black"></td></tr></table>
